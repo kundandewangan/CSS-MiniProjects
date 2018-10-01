@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Print Styles</title>
+</head>
+<body>
+	<div class="final-result">
+        <h2>Final Result <small>Use this for reference!</small></h2>
+        <div class="content">
+
+          <section>
+
+            <h4>Instructions</h4>
+            <p>Use CSS to create a "print" stylesheet. Style this page to look best on paper! Just go ahead and print this page - see what it looks like on your "print preview".</p>
+            <a href="https://bitsofco.de/">Dummy Link</a>
+
+          </section>
+
+        </div>
+    </div>
+
+    <div class="info">
+      <h2>Information <small>About this lesson</small></h2>
+      <h3>What are we making?</h3>
+      <p>Fun &amp; fancy ways to style specifically for your printer!</p>
+
+      <h3>Where can I use it?</h3>
+      <p>In your websites and client projects to ensure the people who actually print your webpages have something nice to look at, I guess.</p>
+
+      <h3>How compatible are these styles with major browsers?</h3>
+      <p>Check the CSS3 styles from your stylesheet <a href="http://caniuse.com/">on this website.</a> It allows you to see the compatibility of every CSS style with major browser.</p>
+    </div>
+
+    <footer>
+      <div class="logo">
+        <a href="http://codecollege.ca/" id="logo">
+
+          <img src="../_theme-styles/img/bggray.svg" width="60px" id="logo_bg-gray">
+          <img src="../_theme-styles/img/bgyellow.svg" width="60px" id="logo_bg-yellow">
+          <img src="../_theme-styles/img/codecollegelogo.svg" width="60px" id="logo_codecollege">
+
+          <!-- <img src="../_theme-styles/img/codecollegelogo.png" alt="Learn to Code at CodeCollege.ca" height="60px"> -->
+
+        </a>
+      </div>
+      <div class="made-by">
+        Made by <a href="http://bradhussey.ca/">Brad Hussey</a>
+      </div>
+      <div class="course">
+        <a href="http://codecollege.ca/">Code 30 things in 30 days with CSS3</a>
+      </div>
+      <div class="copyright">
+        &copy;2018 Brightside Studios Inc.
+      </div>
+    </footer>
+</body>
+</html>
+
+<style type="text/css">
+
+
+	/*
+		/////////////////////////////////////////////////////////////////////////////////
+		/																				/
+		/					This @media print is he main part                      		/	
+		/																				/
+		/////////////////////////////////////////////////////////////////////////////////
+	*/
+	@media print {
+ 
+     /* HIDE UNWANTED ELEMENTS */
+     body::before,
+     .course-files,
+     #logo,
+     .final-result::before,
+     .info::before,
+     .final-result::after,
+     .info::after,
+     .final-result h2,
+     .info h2,
+     img {
+       display: none;
+     }
+ 
+     /* GLOBAL RESET */
+     body {
+       font-family: Georgia, serif;
+       font-size: 16pt;
+       line-height: 24pt;
+       background: none;
+       color: #000;
+     }
+ 
+ 
+     /* LAYOUT RESET */
+     .final-result,
+     .info,
+     section,
+     footer {
+       background: none;
+       width: 100%;
+       border: none;
+       padding: 0;
+       margin: 0;
+       color: #000;
+     }
+ 
+     section:first-child::before {
+       border: none;
+     }
+ 
+     /* SPECIFICS */
+     h1,h2,h3,h4,h5,h6 {
+       color: #000;
+       font-size: 24pt;
+       line-height: 30pt;
+       margin: 0;
+     }
+ 
+     h1 {
+       font-size: 50pt;
+       margin: 0 0 20pt;
+       text-align: center;
+       width: 100%;
+       transform: rotate(0);
+     }
+ 
+     h1 small {
+       font-size: 24pt;
+       color: #000;
+       margin: 0 0 10pt;
+     }
+ 
+     .info p {
+       color: #000;
+     }
+ 
+     a:link {
+       margin: 0;
+     }
+ 
+     a::after {
+       content: " [" attr(href) "]";
+     }
+ 
+     footer a:link,
+     footer a:visited {
+       color: #000;
+       background: none;
+       padding: 0;
+     }
+ 
+</style>

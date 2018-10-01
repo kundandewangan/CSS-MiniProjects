@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Manipulation</title>
+</head>
+<body>
+	<img src="https://images.unsplash.com/photo-1537533040-f8dd8d4dfd71?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=829e4b03a6783537942cff9715e42d51&auto=format&fit=crop&w=634&q=80" class="baby blur">
+	<br><br>
+	<img src="https://images.unsplash.com/photo-1537533781567-e2da0a7dba5a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6d0bee73c6c365b0679ea90b292c1e61&auto=format&fit=crop&w=634&q=80" class="surf-board grayscale">
+	<br><br>
+	<img src="https://images.unsplash.com/photo-1537517545906-686aac8d2f5c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=27d9253d36008cdf4b7017b8540a7dfe&auto=format&fit=crop&w=1400&q=80" class="sunset-bridge invert">
+	<br><br>
+	<img src="https://images.unsplash.com/photo-1496440737103-cd596325d314?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8722d51c953adb60f906e6018fa4e2c4&auto=format&fit=crop&w=634&q=80" class="girl sepia">
+</body>
+</html>
+
+<style type="text/css">
+	.baby, .surf-board, .sunset-bridge, .girl{
+		margin-left: 37%;
+		padding: auto;
+		height: 25%;
+		width: 30%;
+		transition: all 0.3s ease;
+		cursor: crosshair;
+	}
+	body{
+		background-color: #000;
+	}
+	.blur{
+		filter: blur(3px);
+	}
+	.blur:hover{
+		filter: blur(0);
+	}
+	.grayscale{
+		filter: grayscale(1);
+	}
+	.grayscale:hover{
+		filter: grayscale(0);
+	}
+	.invert{
+		filter: invert(100%);
+	}
+	.invert:hover{
+		filter: invert(0);
+	}
+	.sepia{
+		filter: sepia(1); 
+	}
+	.sepia:hover{
+		filter: sepia(0); 
+	}
+</style>

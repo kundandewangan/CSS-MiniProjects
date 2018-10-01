@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Broken Images</title>
+</head>
+<body>
+	<img src="dsfjlasdfjl.jpg" alt="Image " class="image">
+</body>
+</html>
+<style type="text/css">
+	.image{
+		position: relative;
+		display: inline-block;
+		font-size: 1rem;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.image::after{
+		display: inherit;
+		position: absolute;
+		content: "" attr(alt)"Not Found";	
+		top: 0;
+		left: 0;
+		width: 100%;
+		min-width: 200px;
+		padding: 10px 20px 10px 40px;
+		border:dashed 1px #000;
+		background-color: #f0f0f0;
+		background-image: url(noImage.png);
+		background-size: 10%;
+		background-repeat: no-repeat;
+		background-position: 15px 6px;
+		z-index: 1;
+	}
+</style>
