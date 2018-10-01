@@ -1,7 +1,7 @@
 # CSS-MiniProjects
 Contains some small yet attractive and important implementations of CSS. 
 
-*Broken Images file contains the code for the scenario when any image is not displayed in the webpage. 
+Broken Images file contains the code for the scenario when any image is not displayed in the webpage. 
 Rather than the image it shows the alternative text and a cool picture.
 
 Clipping images contains css code which makes different shapes and has images in its background.
