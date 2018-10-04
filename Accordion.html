@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accordion</title>
+</head>
+<body>
+	<div class="accordion">
+		<div class="accordion-item">
+			<a href="#id1" class="accordion-title">Accrdion 1</a>
+			<div class="accordion-content" id="id1">he long tail lacks a tuft at the tip. The skull is delicate and lacks crests and ridges on its roof. First collected in 1929, the Malagasy mountain mouse was not formally described until 1996, but it is now known to have a broad distribution.
+			</div>
+		</div>
+
+		<div class="accordion-item">
+			<a href="#id2" class="accordion-trigger accordion-title">Accrdion 2</a>
+			<div class="accordion-content" id="id2">he long tail lacks a tuft at the tip. The skull is delicate and lacks crests and ridges on its roof. First collected in 1929, the Malagasy mountain mouse was not formally described until 1996, but it is now known to have a broad distribution.
+			</div>
+		</div>
+
+		<div class="accordion-item">
+			<a href="#id3" class="accordion-trigger accordion-title">Accrdion 3</a>
+			<div class="accordion-content" id="id3">he long tail lacks a tuft at the tip. The skull is delicate and lacks crests and ridges on its roof. First collected in 1929, the Malagasy mountain mouse was not formally described until 1996, but it is now known to have a broad distribution.
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+<style type="text/css">
+	.accordion{
+		display: block;
+		padding: 20px;
+		background-color: #fff;
+		position: relative;
+		border: 1px solid #e0e0e0;
+		width: 50%;
+		margin: auto;
+		vertical-align: 20%;
+		background-color: grey;
+		padding: 1em;
+		top: 10em;
+	}
+
+	.accordion-item{;
+		display: block;
+		
+	}
+
+	.accordion-title{
+		color: #fff;
+		font-weight: bold;
+		text-decoration: none;
+		position: relative;
+		display: block;
+		background-color: #00B3B4;
+		padding: 20px;
+		border: 1px solid #379AA4; 
+		box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);
+	}
+
+	.accordion-title:hover{
+		background-color: #0bbfc0;
+	}
+
+	.accordion-content{
+		display: block;	
+		overflow: hidden;
+		height: 0;
+		background-color: #fff;
+		padding: 0;
+	}
+
+	
+	.accordion-content:target{
+		height: 4em;
+		padding: 1em;
+	}
+
+	.accordion-title:after {
+      position: absolute;
+      top: calc(50% - 5px);
+      right: 20px;
+      width: 7px;
+      height: 7px;
+      border-left: 2px solid #FFFFFF;
+      border-bottom: 2px solid #FFFFFF;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      content: "";	
+    }
+    body{
+    	background-color: #463E3E;
+    }
+</style>
