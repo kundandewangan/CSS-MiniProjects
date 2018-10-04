@@ -1,5 +1,7 @@
 # CSS-MiniProjects
-Contains some small yet attractive and important implementations of CSS. 
+Contains some small, attractive and important implementations of CSS. 
+
+Accordion is basically a dropdown card on a section when that particular section is hovered or clicked.
 
 Broken Images file contains the code for the scenario when any image is not displayed in the webpage. 
 Rather than the image it shows the alternative text and a cool picture.
