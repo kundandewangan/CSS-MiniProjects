@@ -10,6 +10,8 @@ Clipping images contains css code which makes different shapes and has images in
      
 Fancy buttons contains cool and attractive button effects with various distinction.
 
+Faze Clan logo using pure HTML & CSS
+
 Image manipulation contains code related to change of image colour when mouse pointer is hovered over the images.
 
 Mario contains the mario game character picture built with pure css.
