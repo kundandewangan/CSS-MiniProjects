@@ -16,7 +16,16 @@
 		<div class="left">TEAM</div>
 		<div class="right">ASTRALIS</div>
 	</div>
-	<footer>F A C E <div></div> T MAJOR CHAMPIONS</footer>
+	<footer class="contain"> 
+				<div id="faceit">
+					FACE
+					<div class="dot">
+							<div class="dot1"></div>
+							<div class="dot2"></div>
+					</div>
+					<div class="letter-I"></div>
+					T MAJOR CHAMPIONS
+				</div></footer>
 </body>
 </html>
 
@@ -64,7 +73,13 @@
 		height: 400px;
 		width: 400px;
 		clip-path: polygon(50% 0%, 32.93% 57.99%, 13.1% 58%, 39.7% 77.9%, 31% 100%, 86.9% 58%, 67.07% 57.99%); 
+		clear: all;
 		
+	}
+	.conatin{
+		//display: inline-block;
+		width: 100%;
+		clear: both;
 	}
 	footer{
 		display: inline-block;
@@ -74,9 +89,47 @@
 		text-align: center;
 		bottom: 10px;
 		font-family: "Mitr";
+		font-weight: bold;
+		clear: left	;
 	}
+	.dot1{
+		position: relative;
+		clip-path: polygon(20% 25%, 19.2% 100%, 20% 100%);
+		background-color: #FD7C3D;
+		height: 30px;
+		top: 30px;
+		display: inline;
+	}
+
+	.dot2{
+		position: relative;
+		clip-path: polygon(20% 50%, 16.2% 50%, 20% 100%);
+		background-color: #FF6215;
+		height: 30px;
+		top: 15px;
+		display: inline-block;
+	}
+
+	.letter-I{
+		position: relative;
+		height: 35px;
+		clip-path: polygon(0 45%, 2% 64%, 2% 100%, 0% 100%);
+		background-color: #fff;
+		left: 146px;
+		top: 10px;
+		display: inline-block;
+	}
+
+
 	body{
 		background-color: #000;
 		
+	}
+	#faceit{
+		display: inline-block;
+		text-align: center;
+	}
+	.dot{
+		display: inline;
 	}
 </style>
